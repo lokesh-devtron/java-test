@@ -1,6 +1,4 @@
 # -------- Build Stage --------
-RUN echo "Using JVM_VERSION=${JVM_VERSION}"
-RUN java -version
 FROM eclipse-temurin:${JVM_VERSION}-jdk AS build
 
 WORKDIR /app
