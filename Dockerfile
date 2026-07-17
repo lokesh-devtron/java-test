@@ -12,7 +12,7 @@ RUN javac -version
 RUN mkdir -p target
 RUN javac -d target src/main/java/App.java
 
-# -------- Runtime Stage --------
+#----- Runtime Stage --------
 FROM eclipse-temurin:${JVM_VERSION}-jre
 
 WORKDIR /app
